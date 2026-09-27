@@ -1,3 +1,5 @@
-FROM ubuntu:latest
-WORKDIR /app
-COPY . /app
+FROM nginx:alpine
+
+COPY . /usr/share/nginx/html
+
+EXPOSE 80
